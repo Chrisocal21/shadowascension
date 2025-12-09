@@ -28,11 +28,6 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to="/merch" className={location.pathname === '/merch' ? 'active' : ''}>
-              Merch
-            </Link>
-          </li>
-          <li>
             <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
               Contact
             </Link>
