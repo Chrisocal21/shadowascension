@@ -1,0 +1,78 @@
+.contact-page {
+  min-height: 100vh;
+  padding: 120px 2rem 4rem;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto 0;
+}
+
+.social-card {
+  background: rgba(32, 32, 48, 0.5);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(74, 158, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+}
+
+.social-icon {
+  margin-bottom: 1rem;
+  color: #4a9eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.social-card p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.social-card-disabled {
+  position: relative;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.coming-soon-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #4a9eff, #6b5ce7);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    grid-template-columns: 1fr;
+  }
+}

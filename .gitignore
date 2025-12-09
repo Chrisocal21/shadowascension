@@ -23,19 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Pages - only keep Home/Landing page
-src/pages/Buy.jsx
-src/pages/Buy.css
-src/pages/About.jsx
-src/pages/About.css
-src/pages/Contact.jsx
-src/pages/Contact.css
-src/pages/Merch.jsx
-src/pages/Merch.css
-src/components/Navigation.jsx
-src/components/Navigation.css
-src/pages/PageLayout.css
-
-# Additional - Merch page (don't push live)
+# Pages - Keep Merch page only in gitignore
 src/pages/Merch.jsx
 src/pages/Merch.css
