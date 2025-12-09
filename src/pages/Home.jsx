@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
         <div className="tagline">
           <p>Every ascension begins in the dark.</p>
         </div>
-        <a href="/buy" className="cta-button">Join the Shadow Army</a>
+        <Link to="/buy" className="cta-button">Join the Shadow Army</Link>
       </div>
     </div>
   )
