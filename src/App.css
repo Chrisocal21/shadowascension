@@ -1,20 +1,21 @@
 .container {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #202030;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container::before {
   content: '';
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 200%;
   height: 200%;
   background: radial-gradient(circle at center, #102030 0%, #102020 50%, transparent 70%);
   animation: pulse 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes pulse {
@@ -25,97 +26,5 @@
   50% {
     transform: scale(1.1);
     opacity: 0.8;
-  }
-}
-
-.content {
-  text-align: center;
-  z-index: 1;
-  padding: 2rem;
-  animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.coin-image {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 2rem;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.title {
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 0;
-  background: linear-gradient(45deg, #fff, #a78bfa, #fff);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-@keyframes shimmer {
-  to {
-    background-position: 200% center;
-  }
-}
-
-.subtitle {
-  font-size: 3rem;
-  color: #4a9eff;
-  margin: 1rem 0;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-shadow: 0 0 20px rgba(74, 158, 255, 0.6),
-               0 0 40px rgba(74, 158, 255, 0.4),
-               0 0 60px rgba(74, 158, 255, 0.2);
-}
-
-.tagline {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  font-style: italic;
-  opacity: 0.9;
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.5rem;
-  }
-  
-  .coin-image {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .tagline {
-    font-size: 1rem;
   }
 }

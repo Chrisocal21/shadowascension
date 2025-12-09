@@ -1,21 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navigation from './components/Navigation'
+import Home from './pages/Home'
+import Buy from './pages/Buy'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Merch from './pages/Merch'
 import './App.css'
+import './pages/PageLayout.css'
 
 function App() {
   return (
-    <div className="container">
-      <div className="content">
-        <img 
-          src="/assets/coinmarkvtr.png" 
-          alt="Shadow Ascension Coin" 
-          className="coin-image"
-        />
-        <h1 className="title">Shadow Ascension</h1>
-        <p className="subtitle">Coming Soon</p>
-        <div className="tagline">
-          <p>The next evolution in meme coins is ascending...</p>
-        </div>
+    <Router>
+      <div className="container">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/buy" element={<Buy />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/merch" element={<Merch />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   )
 }
 
