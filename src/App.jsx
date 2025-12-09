@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Buy from './pages/Buy'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Merch from './pages/Merch'
 import './App.css'
 import './pages/PageLayout.css'
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/buy" element={<Buy />} />
           <Route path="/about" element={<About />} />
+          <Route path="/merch" element={<Merch />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
