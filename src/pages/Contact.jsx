@@ -4,8 +4,8 @@ function Contact() {
   return (
     <div className="page contact-page">
       <div className="page-content">
-        <h1 className="page-title">Get in Touch</h1>
-        <p className="page-subtitle">Join our community and stay updated</p>
+        <h1 className="page-title">Community</h1>
+        <p className="page-subtitle">Join the Shadow Army and stay connected</p>
         
         <div className="social-links">
           <a href="https://x.com/shadowlordlvl99?s=21" className="social-card" target="_blank" rel="noopener noreferrer">

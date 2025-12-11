@@ -35,7 +35,7 @@ function Navigation() {
           </li> */}
           <li>
             <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
-              Contact
+              Community
             </Link>
           </li>
         </ul>
