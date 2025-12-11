@@ -27,14 +27,8 @@ function Navigation() {
               About
             </Link>
           </li>
-          {/* Uncomment for local development: */}
-          {/* <li>
-            <Link to="/merch" className={location.pathname === '/merch' ? 'active' : ''}>
-              Merch
-            </Link>
-          </li> */}
           <li>
-            <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+            <Link to="/community" className={location.pathname === '/community' ? 'active' : ''}>
               Community
             </Link>
           </li>

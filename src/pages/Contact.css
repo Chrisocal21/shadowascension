@@ -3,6 +3,54 @@
   padding: 120px 2rem 4rem;
 }
 
+.community-banner {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(107, 92, 231, 0.1));
+  border: 2px solid rgba(74, 158, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(74, 158, 255, 0.15);
+}
+
+.community-logo {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 0 20px rgba(74, 158, 255, 0.5));
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(74, 158, 255, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(74, 158, 255, 0.8));
+  }
+}
+
+.community-banner .page-title {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #4a9eff, #6b5ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.community-banner .page-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
 .social-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

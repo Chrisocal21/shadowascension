@@ -4,8 +4,11 @@ function Contact() {
   return (
     <div className="page contact-page">
       <div className="page-content">
-        <h1 className="page-title">Community</h1>
-        <p className="page-subtitle">Join the Shadow Army and stay connected</p>
+        <div className="community-banner">
+          <img src="/assets/coinmarkvtr.png" alt="Shadow Ascension" className="community-logo" />
+          <h1 className="page-title">The Shadows Gather</h1>
+          <p className="page-subtitle">Join those who walk the path of ascension. Connect with fellow shadow dwellers and become part of the legend.</p>
+        </div>
         
         <div className="social-links">
           <a href="https://x.com/shadowlordlvl99?s=21" className="social-card" target="_blank" rel="noopener noreferrer">
@@ -37,17 +40,6 @@ function Contact() {
             </div>
             <h3>Discord</h3>
             <p>Connect with fellow holders</p>
-          </div>
-          
-          <div className="social-card social-card-disabled">
-            <div className="coming-soon-badge">Coming Soon</div>
-            <div className="social-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-            </div>
-            <h3>Email</h3>
-            <p>Reach out to our team</p>
           </div>
         </div>
       </div>
