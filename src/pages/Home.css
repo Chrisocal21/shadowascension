@@ -1,22 +1,27 @@
 .home-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 80px;
 }
 
-.home-page .content {
+.hero-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 2rem 0;
+}
+
+.hero-content {
   text-align: center;
-  z-index: 1;
-  padding: 2rem;
-  animation: fadeIn 1s ease-in;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -24,80 +29,200 @@
   }
 }
 
-.home-page .coin-image {
+.hero-coin {
   width: 300px;
   height: 300px;
   margin-bottom: 2rem;
+  filter: drop-shadow(0 0 40px rgba(74, 158, 255, 0.5));
+  animation: float 6s ease-in-out infinite;
 }
 
-.home-page .title {
-  font-size: 4rem;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hero-title {
+  font-size: 5rem;
   font-weight: 900;
   margin: 0;
-  background: linear-gradient(45deg, #fff, #a78bfa, #fff);
-  background-size: 200% auto;
+  background: linear-gradient(45deg, #fff, #a78bfa, #4a9eff, #fff);
+  background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: shimmer 3s linear infinite;
+  animation: shimmer 4s linear infinite;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 @keyframes shimmer {
   to {
-    background-position: 200% center;
+    background-position: 300% center;
   }
 }
 
-.home-page .subtitle {
+.hero-ticker {
   font-size: 3rem;
-  color: #4a9eff;
+  font-weight: 900;
+  color: #00D4FF;
   margin: 1rem 0;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-shadow: 0 0 20px rgba(74, 158, 255, 0.6),
-               0 0 40px rgba(74, 158, 255, 0.4),
-               0 0 60px rgba(74, 158, 255, 0.2);
+  text-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+  letter-spacing: 2px;
 }
 
-.home-page .tagline {
-  margin-top: 2rem;
-  font-size: 1.2rem;
+.hero-tagline {
+  font-size: 1.5rem;
   color: #e0e0e0;
   font-style: italic;
+  margin: 2rem 0;
   opacity: 0.9;
 }
 
-.home-page .cta-button {
+.cta-button {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, #4a9eff, #6b5ce7);
+  padding: 1.25rem 3rem;
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #00D4FF, #0099FF);
   color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 8px;
+  text-decoration: none;
+  border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.5);
 }
 
-.home-page .cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(74, 158, 255, 0.6);
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 40px rgba(0, 212, 255, 0.7);
+}
+
+/* Info Section */
+.info-section {
+  padding: 0 2rem 4rem;
+  background: rgba(32, 32, 48, 0.3);
+}
+
+.info-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background: rgba(32, 32, 48, 0.6);
+  border: 2px solid rgba(74, 158, 255, 0.3);
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.info-card p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.quick-link {
+  background: rgba(32, 32, 48, 0.5);
+  border: 2px solid rgba(74, 158, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  border-color: rgba(74, 158, 255, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+}
+
+.link-icon {
+  color: #4a9eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
-  .home-page .title {
-    font-size: 2.5rem;
+  .hero-coin {
+    width: 220px;
+    height: 220px;
   }
-  
-  .home-page .subtitle {
+
+  .hero-title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-ticker {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .info-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .info-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .info-card h3 {
     font-size: 1.5rem;
+  }
+
+  .info-card p {
+    font-size: 1rem;
+  }
+
+  .quick-links {
+    grid-template-columns: 1fr;
+  }
+}
   }
   
   .home-page .coin-image {
