@@ -27,6 +27,10 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .footer-cta:hover {
