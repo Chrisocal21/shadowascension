@@ -26,7 +26,3 @@ dist-ssr
 # Pages - Keep Merch page only in gitignore
 src/pages/Merch.jsx
 src/pages/Merch.css
-
-# Keep Merch in local navigation/routing but not in production
-src/App.jsx
-src/components/Navigation.jsx

@@ -27,11 +27,12 @@ function Navigation() {
               About
             </Link>
           </li>
-          <li>
+          {/* Uncomment for local development: */}
+          {/* <li>
             <Link to="/merch" className={location.pathname === '/merch' ? 'active' : ''}>
               Merch
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
               Contact
